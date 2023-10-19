@@ -2,22 +2,23 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className=" relative">
-      {/* side */}
-      <div className="flex flex-col items-center w-60 h-screen overflow-hidden text-gray-700 rounded border-r border-gray  max-md:hidden ">
+    <div className="fixed">
+      {/* BIG SCREEN */}
+      <div className="flex flex-col items-center w-72 h-screen overflow-hidden text-gray-700 rounded border-r border-gray  max-lg:hidden ">
         <a
-          className="flex justify-center items-center w-full px-3 mt-3 h-16 border-b border-gray-300"
+          className="flex pl-8 items-center w-full mt-3 h-16 border-b border-gray-300"
           href="#"
         >
+          {/* LOGO */}
           <span className="text-sm font-bold">
             <img
-              src="/src/components/logo.png"
+              src="/src/components/Left/logo.png"
               className="h-11 mr-3 object-fit mb-3"
               alt="TweetBits"
             />
           </span>
         </a>
-        <div className="w-full px-2 pl-6">
+        <div className="w-full px-2 pl-8">
           <div className="flex flex-col items-center w-full mt-3  ">
             <a
               className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-100"
@@ -136,7 +137,7 @@ const Sidebar = () => {
           </div>
         </div>
         <a
-          className="flex items-center pl-8 w-full h-16 mt-auto hover:bg-gray-200"
+          className="flex items-center pl-12 w-full h-16 mt-auto hover:bg-gray-200"
           href="#"
         >
           <svg
@@ -156,14 +157,14 @@ const Sidebar = () => {
           <span className="ml-2 text-lg font-medium">Profile</span>
         </a>
       </div>
-      {/* Side */}
-      <div className="flex flex-col items-center w-16 h-screen border-r border-gray overflow-hidden text-gray-700 rounded min-[640px]:hidden ">
+      {/* SMALL SCREEN */}
+      <div className="flex flex-col items-center w-16 h-screen border-r border-gray overflow-hidden text-gray-700 rounded min-[1024px]:hidden ">
         <a
           className="flex items-center justify-center mt-3 h-16 ml-2 border-b border-gray-300"
           href="#"
         >
           <img
-            src="/src/components/logo1.png"
+            src="/src/components/Left/logo1.png"
             className="h-full w-full mr-3 object-fit mb-3"
             alt="TweetBits"
           />
@@ -265,7 +266,8 @@ const Sidebar = () => {
               />
             </svg>
           </a>
-          <div className="mt-16 ml-4">
+          {/* Post */}
+          <div className="mt-32 ml-4">
             <button
               type="button"
               className="text-white flex justify-center items-center w-[70%] bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-3xl text-md px-3 py-2 text-center mr-2 mb-2 dark:focus:ring-yellow-900"

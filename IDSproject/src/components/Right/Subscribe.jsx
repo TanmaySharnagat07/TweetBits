@@ -2,7 +2,7 @@ import React from "react";
 
 const Subscribe = () => {
   return (
-    <div className="mt-4 ml-4 mr-4 h-42">
+    <div className="mt-[68px] ml-4 mr-4 h-42">
       <div className="max-w-sm p-4 bg-white border border-gray-200 rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">

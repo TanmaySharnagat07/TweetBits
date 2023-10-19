@@ -4,8 +4,9 @@ import Trending from "./Trending";
 
 const RightNav = () => {
   return (
-    <div className="ml-2 mt-1 w-[25vw] max-lg:hidden">
-      <form className="max-w-md px-4">
+    <div className="w-[25vw] relative  max-md:hidden">
+      <div className="bg-white w-full h-16 fixed">
+      <form className="mt-1 max-w-md px-4">
             <div className="relative w-[23vw]">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -28,6 +29,7 @@ const RightNav = () => {
                 />
             </div>
         </form>
+      </div>
         <Subscribe/>
         <Trending/>
     </div>
